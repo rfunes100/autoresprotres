@@ -1,0 +1,10 @@
+C:\Users\rfune3\source\repos\examenautor\examenautor\bin\Debug\examenautor.exe.config
+C:\Users\rfune3\source\repos\examenautor\examenautor\bin\Debug\examenautor.exe
+C:\Users\rfune3\source\repos\examenautor\examenautor\bin\Debug\examenautor.pdb
+C:\Users\rfune3\source\repos\examenautor\examenautor\obj\Debug\examenautor.csprojAssemblyReference.cache
+C:\Users\rfune3\source\repos\examenautor\examenautor\obj\Debug\examenautor.biblioteca.resources
+C:\Users\rfune3\source\repos\examenautor\examenautor\obj\Debug\examenautor.Properties.Resources.resources
+C:\Users\rfune3\source\repos\examenautor\examenautor\obj\Debug\examenautor.csproj.GenerateResource.cache
+C:\Users\rfune3\source\repos\examenautor\examenautor\obj\Debug\examenautor.csproj.CoreCompileInputs.cache
+C:\Users\rfune3\source\repos\examenautor\examenautor\obj\Debug\examenautor.exe
+C:\Users\rfune3\source\repos\examenautor\examenautor\obj\Debug\examenautor.pdb
