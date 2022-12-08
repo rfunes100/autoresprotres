@@ -42,6 +42,7 @@ namespace examenautor
             this.label1 = new System.Windows.Forms.Label();
             this.cmbautor = new System.Windows.Forms.ComboBox();
             this.cmbcategoria = new System.Windows.Forms.ComboBox();
+            this.btneliminar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvautores)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -52,7 +53,7 @@ namespace examenautor
             this.groupBox1.Controls.Add(this.dgvautores);
             this.groupBox1.Location = new System.Drawing.Point(44, 38);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(740, 193);
+            this.groupBox1.Size = new System.Drawing.Size(697, 193);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de autores";
@@ -70,6 +71,7 @@ namespace examenautor
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btneliminar);
             this.groupBox2.Controls.Add(this.btneditar);
             this.groupBox2.Controls.Add(this.btnagregar);
             this.groupBox2.Controls.Add(this.label4);
@@ -173,9 +175,19 @@ namespace examenautor
             this.cmbcategoria.Size = new System.Drawing.Size(197, 24);
             this.cmbcategoria.TabIndex = 0;
             // 
+            // btneliminar
+            // 
+            this.btneliminar.Location = new System.Drawing.Point(397, 184);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(75, 23);
+            this.btneliminar.TabIndex = 10;
+            this.btneliminar.Text = "eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
             // biblioteca
             // 
-            this.ClientSize = new System.Drawing.Size(938, 594);
+            this.ClientSize = new System.Drawing.Size(756, 544);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "biblioteca";
@@ -204,6 +216,7 @@ namespace examenautor
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbautor;
         private System.Windows.Forms.ComboBox cmbcategoria;
+        private System.Windows.Forms.Button btneliminar;
     }
 }
 

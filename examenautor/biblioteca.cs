@@ -153,7 +153,42 @@ namespace examenautor
 
             DataGridViewRow selectedrow = dgvautores.Rows[index];
             id = Convert.ToInt32(selectedrow.Cells[0].Value);
+            cmbcategoria.Text = selectedrow.Cells[1].Value.ToString();
+            txtanio.Text = selectedrow.Cells[2].Value.ToString();
+            cmbautor.Text = selectedrow.Cells[3].Value.ToString();
+            txtlibro.Text = selectedrow.Cells[4].Value.ToString();
+         
 
+
+        }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            if (id == 0)
+            {
+                MessageBox.Show("El biblioteca  esta vacio.");
+            }
+            else
+            {
+
+
+
+
+                SqlConnection conexion = new SqlConnection(conexiondbsql);
+                conexion.Open();
+
+                SqlCommand cmd = new SqlCommand("deletebiblioteca", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", SqlDbType.Int).Value = id;
+
+                cmd.ExecuteNonQuery();
+
+                txtlibro.Text = "";
+                txtanio.Text = "";
+                this.refrescar();
+                MessageBox.Show("Se elimino a la biblioteca de forma exitosa.");
+                conexion.Close();
+            }
 
         }
     }
